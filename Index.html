@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استعلام عن معلومات IP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>استعلام عن معلومات IP</h1>
+        <p>أدخل عنوان الـ IP للحصول على معلومات.</p>
+        <input type="text" id="ipInput" placeholder="أدخل عنوان IP">
+        <button onclick="getIpInfo()">احصل على معلومات</button>
+
+        <div id="result"></div>
+
+        <div class="attempts">
+            <p>لديك محاولتان في الأسبوع.</p>
+            <span id="attemptsLeft">2</span>
+        </div>
+
+        <button onclick="resetApp()">إعادة التشغيل</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
